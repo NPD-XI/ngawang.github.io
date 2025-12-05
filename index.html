@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngawang's Journey - High School Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-mode">
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">NGAWANG PEMO DUKPA</a>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <i class="fas fa-search"></i>
+        <div class="search-suggestions"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#about-me">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="travels.html">Travels</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-extra">
+        <div class="mode-toggle">
+            <i class="fas fa-sun"></i>
+            <span class="toggle-text">Light Mode</span>
+        </div>
+    </div>
+</nav>
+    <header class="hero-section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Ngawang Pemo Dukpa</h1>
+            <p class="tagline">Exploring My High School Journey</p>
+            <div class="cta-buttons">
+                <a href="#about-me" class="btn btn-primary">Explore My Journey</a>
+                <a href="#blog" class="btn btn-secondary">Latest Posts</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about-me" class="content-section about-me">
+        <div class="profile-card">
+            <div class="profile-photo-container">
+                <img src="npd.png" alt="Ngawang Pemo Dukpa" class="profile-photo">
+            </div>
+            <div class="about-text">
+                <h2>A Little About Me</h2>
+                <p>Hello! My name is Ngawang Pemo Dukpa and I was born in Paro, in May 2008. Though my family is from Punakha, I have lived most of my life in Paro because of my father’s work here. Growing up here has shaped many of my interests and experiences, and each of them has contributed to the person I have become. I look forward to continuing this journey with the same spirit of openness and determination.</p>
+                <div class="quick-facts">
+                    <h4>Quick Facts</h4>
+                    <ul>
+                        <li><i class="fas fa-code"></i> **Interests:** Robotics, AI Regulation, Sustainable Technology</li>
+                        <li><i class="fas fa-award"></i> **Achievements:** Fab Academy, BIF Presenter, Aresam Semi-Finalist</li>
+                        <li><i class="fas fa-quote-left"></i> **Aspiration:** To work in the field of AI regulation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="content-section blog-section">
+        <h2 class="section-title">Latest Projects</h2>
+        <div class="blog-grid">
+            
+            <div class="blog-card scroll-animation-element">
+                <img src="fp.png" alt="Japoe Pot Smart Irrigation">
+                <div class="card-content">
+                    <div class="tags">
+                        <span class="tag">Technology</span>
+                        <span class="tag">Academics</span>
+                    </div>
+                    <h3>The Japoe Pot: A Smart Irrigation System</h3>
+                    <p class="post-date">October 2024</p>
+                    <p>My final project for the Fab Academy course was a smart irrigation system that automatically waters potted plants. It brought together my skills in electronics, programming, and digital fabrication.</p>
+                    <a href="academics.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card scroll-animation-element">
+                <img src="menyang.jpg" alt="Makeathon Assistive Technology">
+                <div class="card-content">
+                    <div class="tags">
+                        <span class="tag">Community</span>
+                        <span class="tag">Empathy</span>
+                    </div>
+                    <h3>Makeathon: Creating Assistive Technology</h3>
+                    <p class="post-date">2024-2025</p>
+                    <p>I participated in Makeathon events to design assistive writing tools for students with cerebral palsy. This experience taught me the importance of empathy and creativity in using technology for meaningful change.</p>
+                    <a href="academics.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-card scroll-animation-element">
+                <img src="aresam.jpg" alt="Aresam Space Settlement">
+                <div class="card-content">
+                    <div class="tags">
+                        <span class="tag">Design</span>
+                        <span class="tag">Collaboration</span>
+                    </div>
+                    <h3>Aresam Space Settlement Competition</h3>
+                    <p class="post-date">2024</p>
+                    <p>Working on a project to design a large space settlement orbiting Mars gave me invaluable insights into large-scale problem-solving and futuristic design. Our team's shared journey was unforgettable.</p>
+                    <a href="academics.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to my journey to get the latest news on projects, travels, and more!</p>
+            <form action="#" class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Ngawang's Journey</h4>
+                <p>A portfolio dedicated to my high school experiences.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="travels.html">Travels</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:ngawang@email.com">ngawang@email.com</a></p>
+                <p>Phone: +123-456-7890</p>
+                <div class="contact-form-container">
+                    <form action="#" class="contact-form">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Ngawang Pemo Dukpa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

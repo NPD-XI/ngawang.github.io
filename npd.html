@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngawang's Student Journey</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #3a6ea5, #2e5077);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.3em;
+    }
+    nav {
+      background-color: #2e5077;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #ffdd57;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      line-height: 1.7em;
+    }
+    h2 {
+      color: #2e5077;
+      font-size: 2em;
+      margin-bottom: 15px;
+      border-left: 5px solid #3a6ea5;
+      padding-left: 10px;
+    }
+    footer {
+      background: linear-gradient(135deg, #2e5077, #3a6ea5);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .highlight {
+      background-color: #e6f0ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    .timeline {
+      position: relative;
+      margin: 30px 0;
+      padding-left: 40px;
+      border-left: 3px solid #3a6ea5;
+    }
+    .timeline-item {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+    .timeline-item h3 {
+      margin: 0;
+      color: #2e5077;
+    }
+    .timeline-item p {
+      margin: 5px 0 0;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Journey as a Student</h1>
+    <p>By Ngawang Pemo Dukpa</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#school">School Life</a>
+    <a href="#projects">Projects</a>
+    <a href="#sports">Sports & Activities</a>
+    <a href="#reflection">Reflections</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="paro.jpg" alt="Paro Valley">
+    <p>I was born in May 2008 in Paro, though my family roots are in Punakha. Because of my father’s work, I spent most of my childhood in Paro. In 2020, I joined The Royal Academy as part of the COVID badge. Adjusting to the Academy’s holistic learning system was a challenge, but over time, I discovered new ways of growing not only academically but also personally.</p>
+    <div class="highlight">
+      <p>My early life experiences taught me adaptability, patience, and the importance of learning beyond textbooks.</p>
+    </div>
+  </section>
+
+<section id="highlights">
+  <h2>Highlights</h2>
+  <div class="slideshow-container-small">
+
+    <div class="mySlides fade">
+      <img src="fp.png" alt="Fab Academy Project">
+      <div class="caption-small">2023 – Fab Academy: Japoe Pot Project</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="aresam.jpg" alt="Aresam Space Settlement">
+      <div class="caption-small">2024 – Aresam Space Settlement Design Competition</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="basketball.jpg" alt="Basketball Tournament">
+      <div class="caption-small">Sports & Athletics Exchange</div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+</section>
+
+<style>
+.slideshow-container-small {
+  max-width: 600px;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.mySlides {
+  display: none;
+  border-radius: 15px;
+}
+
+.mySlides img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+.caption-small {
+  color: #fff;
+  font-size: 1em;
+  padding: 8px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.55);
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #3a6ea5;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+
+<script>
+let slideIndexSmall = 0;
+showSlidesSmall();
+
+function showSlidesSmall() {
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndexSmall++;
+  if (slideIndexSmall > slides.length) {slideIndexSmall = 1}    
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexSmall-1].style.display = "block";  
+  dots[slideIndexSmall-1].className += " active";
+  setTimeout(showSlidesSmall, 3000); // Change slide every 3 seconds
+}
+</script>
+
+
+  <section id="school">
+    <h2>School Life</h2>
+    <img src="tra.jpg" alt="The Royal Academy">
+    <p>At The Royal Academy, learning goes far beyond classrooms. I learned science as a single subject to understand the bigger picture of the world. The Academy emphasizes five areas of development, which shaped me into a more balanced individual. Roadmaps, reflections, and exposure to different experiences helped me to gradually build emotional strength and a stronger identity.</p>
+    <p>Though it wasn’t easy at first, the practice of reflection became a turning point in how I approached learning and life itself.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Learning</h2>
+    <img src="fp.png" alt="Japoe Pot Project">
+    <p>Some of my most meaningful growth happened through projects. Completing the Fab Academy was one of my biggest milestones. My final project, the <strong>Japoe Pot</strong>, was a smart irrigation system designed for potted plants, combining technology and sustainability. I also participated in the Aresam Space Settlement Design Competition, where our team worked on futuristic community design orbiting Mars.</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>2023 – Fab Academy</h3>
+        <p>Created the Japoe Pot project as my final work.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2024 – Aresam Design Competition</h3>
+        <p>Worked with a team to design a space settlement orbiting Mars.</p>
+      </div>
+    </div>
+    <div class="highlight">
+      <p>These projects taught me creativity, problem-solving, and teamwork — skills that I believe will guide me in the future.</p>
+    </div>
+  </section>
+
+  <section id="sports">
+    <h2>Sports & Activities</h2>
+    <img src="basketball.jpg" alt="Basketball">
+    <p>Sports have always been an important part of my life. I enjoyed basketball tournaments, morning physical training, and even had the chance to be part of an athletics exchange program in Japan. Sports taught me endurance, discipline, and teamwork. Beyond sports, I participated in farming activities, Buddhist retreats, robotics learning, and internships on entrepreneurship, which gave me valuable insights into the wider world.</p>
+  </section>
+
+  <section id="reflection">
+    <h2>Reflections</h2>
+    <p>Looking back, my student journey has been filled with challenges, achievements, and growth. From adjusting to a new learning environment to working on international projects, every step has shaped who I am becoming. I learned that growth requires courage, reflection, and consistency.</p>
+    <p>My journey is far from over, and I look forward to continuing to learn, explore, and build experiences that shape both my present and my future.</p>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Ngawang Pemo Dukpa | My Student Journey</p>
+  </footer>
+</body>
+</html>
